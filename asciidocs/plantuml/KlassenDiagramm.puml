@@ -1,0 +1,25 @@
+@startuml
+
+abstract class Person {
+    String name
+    int alter
+    greetings()
+}
+
+class Teacher {
+    String name
+    int alter
+    Teacher(name, alter)
+    greetings()
+}
+
+class Student {
+    String name
+    int alter
+    Student(name, alter)
+    greetings()
+}
+
+Person <|-- Teacher
+Person <|-- Student
+@enduml
