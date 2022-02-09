@@ -10,6 +10,16 @@ ifndef::imagesdir[:imagesdir: images]
 
 == Klassendiagramm
 
+[plantuml, <Class>]
+---
 include::plantuml/KlassenDiagramm.puml[]
+---
+
+== Aktivitätsdiagramm
+
+[plantuml, <Activity>]
+---
+include::plantuml/AktivitätsDiagramm.puml[]
+---
 
 
