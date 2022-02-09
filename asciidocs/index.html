@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="author" content="Pascal Goldmann">
+<meta name="author" content="Pascal Goldmann, Üben">
 <title>Üben für Test</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -441,13 +441,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>Üben für Test</h1>
 <div class="details">
-<span id="author" class="author">Pascal Goldmann</span><br>
+<span id="author" class="author">Pascal Goldmann, Üben</span><br>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
 <h2 id="_klassendiagramm">1. Klassendiagramm</h2>
 <div class="sectionbody">
+<div class="openblock plantuml">
+<div class="content">
 <div class="paragraph">
 <p>@startuml</p>
 </div>
@@ -482,9 +484,44 @@ Person &lt;|-- Student
 </div>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_aktivitätsdiagramm">2. Aktivitätsdiagramm</h2>
+<div class="sectionbody">
+<div class="openblock plantuml">
+<div class="content">
+<div class="paragraph">
+<p>@startuml</p>
+</div>
+<div class="paragraph">
+<p>left to right direction</p>
+</div>
+<div class="paragraph">
+<p>actor driver as User</p>
+</div>
+<div class="paragraph">
+<p>rectangle PKW as Pkw{
+    usecase "Güter" as Güter
+    usecase "Personen" as Personen
+    usecase "Fahren" as Fahren
+}</p>
+</div>
+<div class="paragraph">
+<p>User&#8201;&#8212;&#8201;Güter
+User&#8201;&#8212;&#8201;Personen
+User&#8201;&#8212;&#8201;Fahren</p>
+</div>
+<div class="paragraph">
+<p>@enduml</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-02-08 22:38:42 +0100
+Last updated 2022-02-09 08:55:17 +0100
 </div>
 </div>
 </body>
