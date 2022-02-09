@@ -1,0 +1,26 @@
+@startuml
+
+left to right direction
+
+class Liegeplatz {
+    +gebühr: double
+}
+
+class Belegung {
+    +yachtid: Yacht
+    +platzid: Liegeplatz
+    +von: date
+    +bis: date
+    +bezahlt: boolean
+}
+
+class Yacht
+
+class Besitzer
+
+Liegeplatz "*"---"*"Yacht
+Yacht"*" --> "1"Besitzer
+(Liegeplatz, Yacht) .. Belegung
+
+
+@enduml

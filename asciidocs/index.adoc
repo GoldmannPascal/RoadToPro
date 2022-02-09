@@ -10,9 +10,22 @@ ifndef::imagesdir[:imagesdir: images]
 
 == Klassendiagramm
 
+=== Personen
 [plantuml, <Class>]
 --
 include::plantuml/KlassenDiagramm.puml[]
+--
+
+=== Bootverleih
+[plantuml, <Class2>]
+--
+include::plantuml/KlassenDiagramm2.puml[]
+--
+
+=== Fussballdatenbank
+[plantuml, <Class3>]
+--
+include::plantuml/KlassenDiagramm3.puml[]
 --
 
 == Aktivitätsdiagramm, UseCase
@@ -21,6 +34,7 @@ include::plantuml/KlassenDiagramm.puml[]
 --
 include::plantuml/AktivitätsDiagramm.puml[]
 --
+
 
 
 

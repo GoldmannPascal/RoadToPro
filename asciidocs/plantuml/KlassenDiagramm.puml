@@ -1,21 +1,21 @@
 @startuml
 
 abstract class Person {
-    String name
-    int alter
+    -name: String
+    -alter: int
     greetings()
 }
 
 class Teacher {
-    String name
-    int alter
+    -name: String
+    -alter: int
     Teacher(name, alter)
     greetings()
 }
 
 class Student {
-    String name
-    int alter
+    -name: String
+    -alter: int
     Student(name, alter)
     greetings()
 }
@@ -23,3 +23,4 @@ class Student {
 Person <|-- Teacher
 Person <|-- Student
 @enduml
+
