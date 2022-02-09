@@ -15,11 +15,12 @@ ifndef::imagesdir[:imagesdir: images]
 include::plantuml/KlassenDiagramm.puml[]
 --
 
-== Aktivitätsdiagramm
+== Aktivitätsdiagramm, UseCase
 
 [plantuml, <Activity>]
 --
 include::plantuml/AktivitätsDiagramm.puml[]
 --
+
 
 
