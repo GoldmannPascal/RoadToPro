@@ -1,0 +1,26 @@
+@startuml
+
+left to right direction
+
+class Buch
+
+class Zeitschrift
+
+class Verlag
+
+class Mitarbeiter
+
+class Kunden
+
+class Regal
+
+class Sachgebiet
+
+
+Buch "*" -- "1" Verlag
+Buch "*" -- "1" Sachgebiet
+Sachgebiet  "1" -- "*" Regal
+Regal "1" -- "*" Zeitschrift
+
+
+@enduml

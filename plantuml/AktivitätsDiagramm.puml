@@ -1,0 +1,17 @@
+@startuml
+
+left to right direction
+
+actor driver as User
+
+rectangle PKW as Pkw{
+    usecase "Güter" as Güter
+    usecase "Personen" as Personen
+    usecase "Fahren" as Fahren
+}
+
+User -- Güter
+User -- Personen
+User -- Fahren
+
+@enduml
